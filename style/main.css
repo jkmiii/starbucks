@@ -1,4 +1,98 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+body {
+  font-size: 14px;
+  font-family: Arial;
+  border-top: 2px solid #000;
+  position: relative;
+}
+
+section {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+}
+section .logo {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 78px;
+  width: 78px;
+  margin: 20px 0;
+}
+section .menu {
+  width: 1100px;
+  height: 120px;
+}
+section .menu .top-menu {
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  line-height: 22px;
+}
+section .menu .top-menu li {
+  height: 15px;
+  line-height: 20px;
+  margin: 15px 0;
+  padding: 0 16px;
+  border-right: 1px solid #ccc;
+}
+section .menu .top-menu li:nth-child(4) {
+  border: 0;
+}
+section .menu .top-menu .search {
+  border: 0;
+  margin-top: 8px;
+  margin-right: 50px;
+  padding: 0;
+}
+section .menu .top-menu .search input {
+  width: 150px;
+  padding-top: 0;
+  display: none;
+}
+section .menu #main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+section .menu #main-menu li {
+  padding: 2% 2%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+section .menu #main-menu li div {
+  background-color: #ccc;
+  width: 100% position absolute;
+  left: 0;
+  top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+section .menu #main-menu li #coffee {
+  position: absolute;
+  width: 100%;
+}
+section .menu #main-menu li #coffee section {
+  width: 1100px;
+  margin: 0 auto;
+}
+section .menu #main-menu li #coffee ul {
+  width: 200px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .menu #main-menu li:hover #coffee {
+  display: block;
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
