@@ -133,7 +133,4 @@ section .menu #main-menu li .under section .down li h4 {
 }
 section .menu #main-menu li .under section .down li h4 a {
   color: #959999;
-}
-section .menu #main-menu li:hover #coffee {
-  display: inline-block;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=header.css.map */
