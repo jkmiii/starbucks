@@ -1,0 +1,159 @@
+
+.main-banner-bg {
+  background-image: url(../img/main-banner-bg.jpg);
+  .main-coffee {
+    position: relative;
+    height: 646px;
+    overflow: hidden;
+
+    li:nth-child(1) {
+      position: absolute;
+      left: 20px;
+      top: 200px;
+    }
+    li:nth-child(2) {
+      position: absolute;
+      left: 700px;
+      top: 180px;
+    }
+    li:nth-child(3) {
+      position: absolute;
+      left: 450px;
+      top: 80px;
+    } 
+    li:nth-child(4) {
+      position:absolute;
+      right: 200px;
+      top: 50px;
+    }
+    .txt-box {
+      position: absolute;
+      left: 110px;
+      top: 420px;
+      border: 2px solid #000;
+      border-radius: 7%;
+      padding: 8px 28px;
+
+      a { 
+        color: #000;
+      }
+    }
+ }
+}
+
+//공지사항 시작 //
+
+.notice-txt {
+  display: flex;
+  .notice-left {
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: #000;
+    li {
+      line-height: 60px;
+      margin: 0 10px;
+      color: #fff;
+      a {
+        color: #fff;}
+      h2 {
+        font-size: 16px;
+      }
+    }
+    .plus-btn {
+      margin: 0 20px;
+      margin-top: 10px;
+      font-size: 30px;
+      border: 1px solid #fff;
+      width: 35px;
+      height: 35px;
+      border-radius: 25px;
+      text-align: center;
+      line-height: 35px;
+      a {
+        color: #fff;
+      }
+    }
+  }
+  .notice-right {
+    background-color: #f6f5ef;;
+    width: 50%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    li {
+
+      line-height: 35px;
+      margin: 10px 30px;
+      h2 {
+        margin-left: 50px;
+        font-size: 16px;
+       }
+    }
+  }
+}
+
+.slide {border: 1px solid orange;
+  background-color: #f6f5ef;
+  display: flex;
+  width: 100%;
+ /*  overflow: hidden; */
+  ul {
+    width: 2490px;
+    position: relative;
+    left: 290px;
+    margin: 0px 10px;
+    margin-top: 40px;
+    li:last-child{
+      border: 2px solid #000;
+      border-radius: 5px;
+      width: 125px;
+      height: 37px;
+      text-align: center;
+      line-height: 35px;
+      position: relative;
+      left: 42%;
+      top: -8%;
+    }
+  }
+}
+
+.slide-btn {
+  overflow: hidden;
+  .next {
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    position: absolute;
+    left: 200px;
+    top: 1050px;
+  }
+
+  .prev {
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    position: absolute;
+    right: 200px;
+    top: 1050px;
+  }
+  ul {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 5px;
+      margin-bottom: 20px;
+    }
+  }
+}
