@@ -5,6 +5,9 @@ $(document).ready(function(){
     $(this).find('#slider').stop().slideUp();
   });
 
+  $('#header').load("/header.html");
+  $('#footer').load("/footer.html");
+
 })
 
 //#coffee 메뉴//
