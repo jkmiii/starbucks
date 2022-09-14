@@ -1,10 +1,11 @@
 $(document).ready(function(){
-  $('#main-menu li, #coffee').mouseover(function(){
-    $('#coffee').stop().slideDown();
+  $('#main-menu>li').mouseover(function(){
+    $(this).find('#slider').stop().slideDown();
   }).mouseout(function(){
-    $('#coffee').stop().slideUp();
+    $(this).find('#slider').stop().slideUp();
   });
 
 })
 
 //#coffee 메뉴//
+

@@ -11,7 +11,8 @@ a {
 }
 
 body {
-  font-size: 14px;
+  font-size: 13px;
+  color: #000;
   font-family: Arial, "맑은고딕";
   border-top: 2px solid #000;
   position: relative;
@@ -70,67 +71,77 @@ section .menu #main-menu {
   display: flex;
   justify-content: flex-end;
 }
-section .menu #main-menu li {
+section .menu #main-menu > li {
+  margin-top: 7px;
   padding: 2% 2%;
   justify-content: center;
+  height: 30px;
 }
-section .menu #main-menu li div {
-  display: none;
-}
-section .menu #main-menu li #coffee {
+section .menu #main-menu > li > div {
   flex-wrap: wrap;
   background-color: #2c2a29;
   width: 100%;
   position: absolute;
   left: 0;
   top: 120px;
+  z-index: 5;
+  display: none;
 }
-section .menu #main-menu li #coffee .inner {
+section .menu #main-menu > li > div .inner {
   width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
-section .menu #main-menu li #coffee .inner ul li {
+section .menu #main-menu > li > div .inner ul > li {
   flex-wrap: wrap;
   width: 210px;
+  line-height: 20px;
 }
-section .menu #main-menu li #coffee .inner ul li a {
+section .menu #main-menu > li > div .inner ul > li a {
   color: #999;
 }
-section .menu #main-menu li #coffee .inner ul li h3 {
-  font-size: 13px;
-  padding: 10px 0;
+section .menu #main-menu > li > div .inner ul > li h3 {
+  font-size: 14px;
+  padding: 15px 0;
+  line-height: 30px;
 }
-section .menu #main-menu li #coffee .inner ul li h3 a {
+section .menu #main-menu > li > div .inner ul > li h3 a {
   color: #fff;
 }
-section .menu #main-menu li #coffee .inner ul:last-of-type {
+section .menu #main-menu > li > div .inner ul:last-of-type {
   flex-basis: 0;
   width: 1100px;
 }
-section .menu #main-menu li .under {
+section .menu #main-menu > li .under {
   margin-top: 20px;
   padding: 8px 0;
   background-image: url(../img/under-bg.png);
   display: block;
 }
-section .menu #main-menu li .under section .down {
+section .menu #main-menu > li .under section .down {
   padding: 20px 0;
   width: 500px;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section .menu #main-menu li .under section .down li {
+section .menu #main-menu > li .under section .down li {
   font-size: 12px;
   color: yellowgreen;
   width: 1000px;
   padding: 0;
   line-height: 20px;
 }
-section .menu #main-menu li .under section .down li h4 {
+section .menu #main-menu > li .under section .down li h4 {
   padding-top: 5px;
   font-size: 12px;
 }
-section .menu #main-menu li .under section .down li h4 a {
+section .menu #main-menu > li .under section .down li h4 a {
   color: #959999;
+}
+section .menu #main-menu > li:hover {
+  background-color: #2c2a29;
+}
+section .menu #main-menu > li:hover > a {
+  color: green;
+  text-decoration: underline;
 }/*# sourceMappingURL=header.css.map */
