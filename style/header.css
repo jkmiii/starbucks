@@ -1,83 +1,67 @@
-@charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: #555;
-}
-
-body {
-  font-size: 13px;
-  color: #000;
-  font-family: Arial, "맑은고딕";
-  border-top: 2px solid #000;
-  position: relative;
-}
-
 header {
   background-color: #f6f5ef;
 }
+header .border__top {
+  border-top: 2px solid #000;
+}
 
-section {
+.bg-inner {
   display: flex;
   width: 1100px;
   margin: 0 auto;
 }
-section .logo {
+.bg-inner .logo {
   display: flex;
   flex-flow: row nowrap;
   height: 78px;
   width: 78px;
   margin: 20px 0;
 }
-section .menu {
+.bg-inner .menu {
   width: 1100px;
   height: 120px;
   background-color: #f6f5ef;
 }
-section .menu .top-menu {
+.bg-inner .menu .top-menu {
   font-size: 13px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   line-height: 22px;
 }
-section .menu .top-menu li {
+.bg-inner .menu .top-menu li {
   height: 15px;
   line-height: 20px;
   margin: 15px 0;
   padding: 0 16px;
   border-right: 1px solid #ccc;
 }
-section .menu .top-menu li:nth-child(4) {
+.bg-inner .menu .top-menu li:nth-child(4) {
   border: 0;
 }
-section .menu .top-menu .search {
+.bg-inner .menu .top-menu .search {
   border: 0;
   margin-top: 8px;
   margin-right: 50px;
   padding: 0;
 }
-section .menu .top-menu .search input {
+.bg-inner .menu .top-menu .search input {
   width: 150px;
   padding-top: 0;
   display: none;
 }
-section .menu #main-menu {
+.bg-inner .menu #main-menu {
   display: flex;
   justify-content: flex-end;
 }
-section .menu #main-menu > li {
+.bg-inner .menu #main-menu > li {
+  font-size: 14px;
   margin-top: 7px;
   padding: 2% 2%;
   justify-content: center;
   height: 30px;
 }
-section .menu #main-menu > li > div {
+.bg-inner .menu #main-menu > li > div {
   flex-wrap: wrap;
   background-color: #2c2a29;
   width: 100%;
@@ -87,61 +71,63 @@ section .menu #main-menu > li > div {
   z-index: 5;
   display: none;
 }
-section .menu #main-menu > li > div .inner {
+.bg-inner .menu #main-menu > li > div .inner {
+  display: flex;
   width: 1100px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
-section .menu #main-menu > li > div .inner ul > li {
+.bg-inner .menu #main-menu > li > div .inner ul > li {
+  font-size: 12px;
   flex-wrap: wrap;
   width: 210px;
   line-height: 20px;
 }
-section .menu #main-menu > li > div .inner ul > li a {
+.bg-inner .menu #main-menu > li > div .inner ul > li a {
   color: #999;
 }
-section .menu #main-menu > li > div .inner ul > li h3 {
+.bg-inner .menu #main-menu > li > div .inner ul > li h3 {
   font-size: 14px;
   padding: 15px 0;
   line-height: 30px;
 }
-section .menu #main-menu > li > div .inner ul > li h3 a {
+.bg-inner .menu #main-menu > li > div .inner ul > li h3 a {
   color: #fff;
 }
-section .menu #main-menu > li > div .inner ul:last-of-type {
+.bg-inner .menu #main-menu > li > div .inner ul:last-of-type {
   flex-basis: 0;
   width: 1100px;
 }
-section .menu #main-menu > li .under {
+.bg-inner .menu #main-menu > li .under {
   margin-top: 20px;
   padding: 8px 0;
   background-image: url(../img/under-bg.png);
   display: block;
 }
-section .menu #main-menu > li .under section .down {
+.bg-inner .menu #main-menu > li .under section .down {
   padding: 20px 0;
   width: 500px;
   flex-direction: column;
   flex-wrap: wrap;
 }
-section .menu #main-menu > li .under section .down li {
+.bg-inner .menu #main-menu > li .under section .down li {
   font-size: 12px;
   color: yellowgreen;
   width: 1000px;
   padding: 0;
   line-height: 20px;
 }
-section .menu #main-menu > li .under section .down li h4 {
+.bg-inner .menu #main-menu > li .under section .down li h4 {
   padding-top: 5px;
   font-size: 12px;
 }
-section .menu #main-menu > li .under section .down li h4 a {
+.bg-inner .menu #main-menu > li .under section .down li h4 a {
   color: #959999;
 }
-section .menu #main-menu > li:hover {
+.bg-inner .menu #main-menu > li:hover {
   background-color: #2c2a29;
 }
-section .menu #main-menu > li:hover > a {
+.bg-inner .menu #main-menu > li:hover > a {
   color: green;
   text-decoration: underline;
 }/*# sourceMappingURL=header.css.map */
