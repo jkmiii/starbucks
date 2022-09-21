@@ -1,9 +1,8 @@
 
 
-$(document).ready(function(){
   $('#header').load("/header.html");
 	$('#footer').load("/footer.html");
-});
+
 
 
 $(window).on("load",function(){
@@ -14,7 +13,7 @@ $(window).on("load",function(){
     $(this).find('#slider').stop().slideUp();
   });
 
-});
+})
 
 //#coffee 메뉴//
 
