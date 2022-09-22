@@ -325,45 +325,55 @@ a {
 }
 
 .slide {
-  position: relative;
   background-color: #f6f5ef;
-  display: flex;
-}
-.slide ul {
-  width: 2490px;
-  font-size: 14px;
+  width: 820px;
+  margin: 0 auto;
   position: relative;
-  margin: 0px 5px;
-  margin-top: 40px;
 }
-.slide ul .slide-banner {
+.slide .slide__item {
+  border: 1px solid green;
+  display: flex;
+  width: 2490px;
+  margin-left: -100%;
+}
+.slide .slide__item .slide__banner {
   border: 1px solid red;
-  width: 819px;
-  justify-content: center;
-  margin-left: -35%;
+  margin: 0 5px;
+  position: relative;
 }
-.slide ul .more__btn {
+.slide .slide__item .more__btn {
   border: 2px solid #000;
   border-radius: 5px;
-  width: 125px;
-  height: 37px;
-  text-align: center;
-  line-height: 35px;
+  padding: 10px 23px;
   position: absolute;
-  bottom: 5px;
-  left: 12%;
+  bottom: 1%;
+  left: 41%;
+  transition: background-color 0.5s;
+}
+.slide .slide__item .more__btn a {
+  color: #000;
+  font-size: 13px;
+  transition: color 0.5s;
+}
+.slide .slide__item :hover {
+  background-color: #000;
+}
+.slide .slide__item :hover :hover a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 .slide .slide__btn {
   border: 1px solid green;
-  position: absolute;
-  top: 40%;
-  left: 23%;
-  width: 1050px;
+  width: 1000px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: -9%;
 }
-.slide .slide__btn .prev {
+.slide .slide__btn #next, .slide .slide__btn #prev {
   line-height: 40px;
   text-align: center;
   font-size: 45px;
@@ -371,24 +381,25 @@ a {
   height: 50px;
   border: 2px solid #000;
   border-radius: 50px;
+  cursor: pointer;
 }
-.slide .slide__btn .next {
-  line-height: 40px;
-  text-align: center;
-  font-size: 45px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid #000;
-  border-radius: 50px;
+.slide .slide__btn #next:hover {
+  background-color: #fff;
+}
+.slide .slide__btn #prev:hover {
+  background-color: #fff;
 }
 
-.slide__play ul {
-  position: relative;
-  border: 1px solid red;
+.slide__play {
+  margin-top: 20px;
+  width: 100%;
+  margin: 20px auto;
+}
+.slide__play .slide__play__btn {
   display: flex;
   justify-content: center;
 }
-.slide__play ul li {
-  margin: 0 5px;
+.slide__play .slide__play__btn > li {
+  margin: 0 3px;
   margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
