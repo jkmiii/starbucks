@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#mob-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+}
+#mob-menu .close {
+  position: absolute;
+  left: 22%;
+  top: 6%;
+}
+#mob-menu .mob-menu-slide {
+  width: 70%;
+  background-color: green;
+}
+#mob-menu .mob-menu-slide .mob-menu-slide__search {
+  background-color: #2d2926;
+  border-bottom: 1px solid #222;
+}
+#mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search {
+  height: 60px;
+  display: flex;
+  padding: 25px 0;
+}
+#mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search #mob-search-box {
+  margin: 0 10px;
+  width: 70%;
+  height: 75%;
+  border-radius: 5px;
+  border: none;
+}
+#mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search .search-btn {
+  margin: 0 10px;
+  width: 25%;
+  height: 75%;
+  border: none;
+  border-radius: 5px;
+  background-color: #666;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search .search-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#mob-menu .mob-menu-slide .drop-menu #frist-menu {
+  background-color: #2d2926;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title {
+  border: 1px solid green;
+  padding: 24px;
+  border-bottom: 1px solid #222;
+  background-color: #111;
+  cursor: pointer;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-btn {
+  float: right;
+  width: 30px;
+  height: 20px;
+  padding-top: 8px;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down {
+  display: none;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__txt {
+  height: 60px;
+  border: 1px solid pink;
+  line-height: 3.5rem;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down {
+  display: none;
+}
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down li {
+  border: 1px solid orange;
+  height: 60px;
+}
+#mob-menu .mob-menu-slide .drop-menu__title:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=header-mob.css.map */
