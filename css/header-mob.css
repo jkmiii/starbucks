@@ -7,7 +7,8 @@ a {
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: flex-end;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  right: -100%;
 }
 #mob-menu .close {
   position: absolute;
@@ -52,8 +53,7 @@ a {
   background-color: #2d2926;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title {
-  border: 1px solid green;
-  padding: 24px;
+  line-height: 70px;
   border-bottom: 1px solid #222;
   background-color: #111;
   cursor: pointer;
@@ -66,10 +66,9 @@ a {
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down {
   display: none;
+  background-color: #111;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__txt {
-  height: 60px;
-  border: 1px solid pink;
   line-height: 3.5rem;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down {
@@ -79,6 +78,6 @@ a {
   border: 1px solid orange;
   height: 60px;
 }
-#mob-menu .mob-menu-slide .drop-menu__title:hover {
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title.on {
   text-decoration: underline;
 }/*# sourceMappingURL=header-mob.css.map */
