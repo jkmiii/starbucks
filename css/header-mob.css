@@ -1,3 +1,10 @@
+#header-mob {
+  width: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -11,6 +18,7 @@ a {
   right: -100%;
 }
 #mob-menu .close {
+  cursor: pointer;
   position: absolute;
   left: 22%;
   top: 6%;
@@ -60,9 +68,10 @@ a {
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-btn {
   float: right;
-  width: 30px;
+  width: 20px;
   height: 20px;
-  padding-top: 8px;
+  padding-top: 25px;
+  padding-right: 25px;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down {
   display: none;
@@ -75,7 +84,6 @@ a {
   display: none;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down li {
-  border: 1px solid orange;
   height: 60px;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title.on {

@@ -23,13 +23,29 @@ $(document).ready(function () {
       return false;
     });
 
-    
+    //////////////드롭다운메뉴끝////////////
+/* 
+    var giMenuDuration = 700;
 
+    function ShowMenu(){
+      $('#header-mob').css({'display' : block});
+      $('#header-mob').css({'right' : '-100%'});
+      $('#header-mob').animate({right : '0px'}, {duration: giMenuDuration});
+    }
 
+    function HideMenu(){
+      $('#header-mob').animate({right:'-100%'}, {duration: giMenuDuration, complete:function(){$('#header-mob').css({'display' : 'none'});}})
+    }
+ */
 
+$('#berger').click(function(){
+  $('#header-mob').animate({'right' : '100%'},1000);
+  return false;
+});
 
-  /*   $('.drop-menu__title a').click(function(){
-      $(this).addClass('on');
-    }) */
+$('.close').click(function(){
+  $('#header-mob').animate({'right' : '-100%'},1000);
+  return false;
+})
 
   });

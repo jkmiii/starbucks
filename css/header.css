@@ -30,6 +30,9 @@
   .tablet {
     display: none;
   }
+  #header-mob {
+    display: none;
+  }
 }
 header {
   background-color: #f6f5ef;

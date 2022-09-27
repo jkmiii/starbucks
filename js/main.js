@@ -2,6 +2,8 @@
 
   $('#header').load("/header.html");
 	$('#footer').load("/footer.html");
+	$('#header-mob').load("/header-mob.html");
+
 
 
 
