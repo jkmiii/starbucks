@@ -3,6 +3,7 @@
   position: absolute;
   right: -100%;
   top: 0;
+  z-index: 20;
 }
 
 a {
@@ -21,11 +22,14 @@ a {
   cursor: pointer;
   position: absolute;
   left: 22%;
-  top: 6%;
+  top: 50px;
+}
+#mob-menu .close:hover {
+  transform: rotate(360deg);
+  transition: 2s;
 }
 #mob-menu .mob-menu-slide {
   width: 70%;
-  background-color: green;
 }
 #mob-menu .mob-menu-slide .mob-menu-slide__search {
   background-color: #2d2926;
@@ -34,7 +38,7 @@ a {
 #mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search {
   height: 60px;
   display: flex;
-  padding: 25px 0;
+  padding: 20px 20px;
 }
 #mob-menu .mob-menu-slide .mob-menu-slide__search .mob-search #mob-search-box {
   margin: 0 10px;
@@ -60,30 +64,40 @@ a {
 #mob-menu .mob-menu-slide .drop-menu #frist-menu {
   background-color: #2d2926;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title {
+  width: 515px;
+  padding-left: 20px;
   line-height: 70px;
   border-bottom: 1px solid #222;
   background-color: #111;
   cursor: pointer;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-btn {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title .drop-btn {
   float: right;
   width: 20px;
   height: 20px;
-  padding-top: 25px;
   padding-right: 25px;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down {
+  width: 495px;
+  margin-left: -20px;
+  padding-left: 40px;
   display: none;
-  background-color: #111;
+  background-color: #181818;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__txt {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__txt {
   line-height: 3.5rem;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down {
+  background-color: #222222;
   display: none;
+  margin-left: -40px;
+  padding-left: 60px;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title .drop-menu__down .drop-menu__down__down li {
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down a {
+  color: #666;
+}
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down li {
   height: 60px;
 }
 #mob-menu .mob-menu-slide .drop-menu .drop-menu__title.on {

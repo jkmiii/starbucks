@@ -47,5 +47,16 @@ $('.close').click(function(){
   $('#header-mob').animate({'right' : '-100%'},1000);
   return false;
 })
-
   });
+
+
+    $('.drop-menu__title').on({
+      'click' : function(){
+        $(this).find('#btn_w').attr("src", "img/mob_gnb_arrow_up_w.png");
+    }
+  });
+  $('.drop-menu__txt').on({
+    'click' : function(){
+      $(this).find('#btn_g').attr("src", "img/mob_gnb_arrow_up_g.png");
+  }
+});

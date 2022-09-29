@@ -3,6 +3,7 @@
   position: absolute;
   right: -100%;
   top: 0;
+  z-index: 20;
 }
 
 a {
@@ -16,19 +17,24 @@ a {
   justify-content: flex-end;
   font-size: 1.5rem;
   right: -100%;
+ 
 
 
   .close {
     cursor: pointer;
     position: absolute;
     left: 22%;
-    top: 6%;
+    top: 50px;
+  }
+
+  .close:hover {
+    transform: rotate(360deg) ;
+    transition: 2s;
   }
 
   .mob-menu-slide {
 
     width: 70%;
-    background-color: green;
 
     .mob-menu-slide__search {
       background-color: #2d2926;
@@ -37,7 +43,7 @@ a {
       .mob-search {
         height: 60px;
         display: flex;
-        padding: 25px 0;
+        padding: 20px 20px;
 
 
         #mob-search-box {
@@ -71,12 +77,16 @@ a {
     }
 
     .drop-menu {
+ 
+
 
       #frist-menu {
         background-color: #2d2926;
       }
 
-      .drop-menu__title {
+      &>.drop-menu__title {
+        width: 515px;
+        padding-left: 20px;
         line-height: 70px;
         border-bottom: 1px solid #222;
         background-color: #111;
@@ -86,13 +96,15 @@ a {
           float: right;
           width: 20px;
           height: 20px;
-          padding-top: 25px;
           padding-right: 25px;
         }
 
-        .drop-menu__down {
+        &>.drop-menu__down {
+          width: 495px;
+      margin-left: -20px;
+      padding-left: 40px;
           display: none;
-          background-color: #111;
+          background-color: #181818;
 
           .drop-menu__txt {
             line-height: 3.5rem;
@@ -100,7 +112,13 @@ a {
 
 
           .drop-menu__down__down {
+            background-color: #222222;
             display: none;
+            margin-left: -40px;
+            padding-left: 60px;
+            a {
+              color: #666;
+            }
 
             li {
               height: 60px;
