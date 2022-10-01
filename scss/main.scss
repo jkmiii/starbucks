@@ -1,43 +1,47 @@
-
+@media screen and (max-width: 960px) {
+  
+}
 body {
   color: #000;
   font-size: 12px;
-  width: 100%;
 }
 a {
   text-decoration: none;
 }
 
 .main-banner-bg {
+  position: relative;
+  width: 100%;
   background-image: url(../img/main-banner-bg.jpg);
   .main-coffee {
-    position: relative;
-    width: 100%;
+    border:1px solid green;
     height: 646px;
-    margin: 0 auto;
+    img {
+      width: 100%;
+    }
 
-    li:nth-child(1) {
+    .main-coffee__img1 {
       position: absolute;
       left: 250px;
       top: 195px;
       animation: main-banner__poster 3s;
       }
 
-    li:nth-child(2) {
+      .main-coffee__img2 {
       position: absolute;
       left: 925px;
       top: 172px;
       animation: main-banner__drink01 3s;
 
     }
-    li:nth-child(3) {
+    .main-coffee__img3 {
       position: absolute;
       left: 680px;
       top: 71px;
       animation: main-banner__drink02 3s;
 
     } 
-    li:nth-child(4) {
+    .main-coffee__img4 {
       position:absolute;
       left: 1175px;
       top: 50px;

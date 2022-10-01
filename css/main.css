@@ -1,7 +1,6 @@
 body {
   color: #000;
   font-size: 12px;
-  width: 100%;
 }
 
 a {
@@ -9,36 +8,39 @@ a {
 }
 
 .main-banner-bg {
+  position: relative;
+  width: 100%;
   background-image: url(../img/main-banner-bg.jpg);
 }
 .main-banner-bg .main-coffee {
-  position: relative;
-  width: 100%;
+  border: 1px solid green;
   height: 646px;
-  margin: 0 auto;
 }
-.main-banner-bg .main-coffee li:nth-child(1) {
+.main-banner-bg .main-coffee img {
+  width: 100%;
+}
+.main-banner-bg .main-coffee .main-coffee__img1 {
   position: absolute;
   left: 250px;
   top: 195px;
   -webkit-animation: main-banner__poster 3s;
           animation: main-banner__poster 3s;
 }
-.main-banner-bg .main-coffee li:nth-child(2) {
+.main-banner-bg .main-coffee .main-coffee__img2 {
   position: absolute;
   left: 925px;
   top: 172px;
   -webkit-animation: main-banner__drink01 3s;
           animation: main-banner__drink01 3s;
 }
-.main-banner-bg .main-coffee li:nth-child(3) {
+.main-banner-bg .main-coffee .main-coffee__img3 {
   position: absolute;
   left: 680px;
   top: 71px;
   -webkit-animation: main-banner__drink02 3s;
           animation: main-banner__drink02 3s;
 }
-.main-banner-bg .main-coffee li:nth-child(4) {
+.main-banner-bg .main-coffee .main-coffee__img4 {
   position: absolute;
   left: 1175px;
   top: 50px;

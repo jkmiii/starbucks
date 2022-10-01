@@ -38,6 +38,8 @@ $(document).ready(function () {
     }
  */
 
+    ///////////////////메뉴슬라이드로들어오기
+
 $('#berger').click(function(){
   $('#header-mob').animate({'right' : '100%'},1000);
   return false;
@@ -49,6 +51,7 @@ $('.close').click(function(){
 })
   });
 
+////////////////////메뉴화살표토글
 
     $('.drop-menu__title').on({
       'click' : function(){
@@ -60,3 +63,4 @@ $('.close').click(function(){
       $(this).find('#btn_g').attr("src", "img/mob_gnb_arrow_up_g.png");
   }
 });
+

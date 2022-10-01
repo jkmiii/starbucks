@@ -61,11 +61,13 @@ a {
   text-decoration: underline;
   cursor: pointer;
 }
+#mob-menu .mob-menu-slide .drop-menu {
+  width: 100%;
+}
 #mob-menu .mob-menu-slide .drop-menu #frist-menu {
   background-color: #2d2926;
 }
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title {
-  width: 515px;
   padding-left: 20px;
   line-height: 70px;
   border-bottom: 1px solid #222;
@@ -79,7 +81,6 @@ a {
   padding-right: 25px;
 }
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down {
-  width: 495px;
   margin-left: -20px;
   padding-left: 40px;
   display: none;

@@ -5,28 +5,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Starbucks Korea</title>
+
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/header-mob.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/reset.css">
-	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 	
 
 </head>
+
 
 <body>
 	<div id="header"></div>
 	<div id="header-mob"></div>
 	<!-- 메인시작////////////////////////////////// -->
+	
 
 	
 		<div class="main-banner-bg">
 			<ul class="main-coffee">
-				<li><img src="img/main-banner.png" alt="around autumn,around us"></li>
-				<li><img src="img/main-drink01.png" alt="블랙 글레이즈드 라떼"></li>
-				<li><img src="img/main-drink02.png" alt="그린 애플 캐모마일 티"></li>
-				<li><img src="img/main-drink03.png" alt="호두 블랙 티 라떼"></li>
+				<li class="main-coffee__img1"><img src="img/main-banner.png" alt="around autumn,around us"></li>
+				<li class="main-coffee__img2"><img src="img/main-drink01.png" alt="블랙 글레이즈드 라떼"></li>
+				<li class="main-coffee__img3"><img src="img/main-drink02.png" alt="그린 애플 캐모마일 티"></li>
+				<li class="main-coffee__img4"><img src="img/main-drink03.png" alt="호두 블랙 티 라떼"></li>
 				<li class="txt-box"><a href="#">자세히 보기</a></li>
 			</ul>
 		</div>
@@ -51,9 +56,13 @@
 					<li><a href="#"><img src="img/btn_prom_up.png"></a></li>
 				</ul>
 			</div>
+			
 
-			<div class="slide">
+
+			<div class="autoplay">
 				<ul class="slide__item">
+					<li class="slide__banner"><img src="img/slide-03.jpg" alt="스타벅스 카드 결제 프로모션">
+						<span class="more__btn"><a href="#">자세히 보기</a></span></li>
 					<li class="slide__banner"><img src="img/slide-01.jpg" alt="추석 프로모션 배너">
 					<span class="more__btn"><a href="#">자세히 보기</a></span></li>
 					<li class="slide__banner"><img src="img/slide-02.jpg" alt="스타벅스 리저브 오텀 원두 배너">
@@ -77,6 +86,17 @@
 					</ul>
 				
 			</div>
+			<div class="autoplay">
+				<div><img src="img/slide-03.jpg" alt="스타벅스 카드 결제 프로모션">
+					<span class="more__btn"><a href="#">자세히 보기</a></span></div>
+		    <div><img src="img/slide-01.jpg" alt="추석 프로모션 배너">
+					<span class="more__btn"><a href="#">자세히 보기</a></span></div>
+		    <div><img src="img/slide-02.jpg" alt="스타벅스 리저브 오텀 원두 배너">
+					<span class="more__btn"><a href="#">자세히 보기</a></span></div>
+				<div><img src="img/slide-03.jpg" alt="스타벅스 카드 결제 프로모션">
+					<span class="more__btn"><a href="#">자세히 보기</a></span></div>
+
+			</div>
 
 
 		</div>
@@ -84,10 +104,15 @@
 
 
 	<div id="footer"></div>
-	
- 
 </body>
+	
 
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/main.js"></script>
+
+
 
 </html>
