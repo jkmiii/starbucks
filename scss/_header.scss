@@ -97,6 +97,9 @@ a {
 
           .drop-menu__txt {
             line-height: 3.5rem;
+            a.on {
+              text-decoration: underline;
+            }
           }
 
           .drop-menu__down__down {
@@ -104,6 +107,10 @@ a {
             display: none;
             margin-left: -40px;
             padding-left: 60px;
+            a.on {
+              text-decoration: underline;
+            }
+
             a {
               color: #666;
             }
@@ -114,8 +121,10 @@ a {
           }
         }
       }
-      .drop-menu__title.on {
-        text-decoration: underline;
+      .drop-menu__title {
+        & > a.on {
+          text-decoration: underline;
+        }
       }
     }
   }

@@ -1,5 +1,4 @@
 @media screen and (max-width: 960px) {
-  
 }
 body {
   color: #000;
@@ -14,7 +13,7 @@ a {
   width: 100%;
   background-image: url(../img/main-banner-bg.jpg);
   .main-coffee {
-    border:1px solid green;
+    border: 1px solid green;
     height: 646px;
     img {
       width: 100%;
@@ -25,24 +24,22 @@ a {
       left: 250px;
       top: 195px;
       animation: main-banner__poster 3s;
-      }
+    }
 
-      .main-coffee__img2 {
+    .main-coffee__img2 {
       position: absolute;
       left: 925px;
       top: 172px;
       animation: main-banner__drink01 3s;
-
     }
     .main-coffee__img3 {
       position: absolute;
       left: 680px;
       top: 71px;
       animation: main-banner__drink02 3s;
-
-    } 
+    }
     .main-coffee__img4 {
-      position:absolute;
+      position: absolute;
       left: 1175px;
       top: 50px;
       animation: main-banner__drink03 3s;
@@ -58,8 +55,7 @@ a {
       padding: 10px 30px;
       animation: main-banner__txt-box 3s;
 
-
-      a { 
+      a {
         color: #000;
       }
     }
@@ -67,48 +63,108 @@ a {
       background-color: #fff;
       text-decoration: underline;
     }
-    
-    @keyframes main-banner__poster{
-      0%{opacity: 0}
-      20%{opacity: 1;}
-      40%{opacity: 1;}
-      60%{opacity: 1;}
-      80%{opacity: 1;}
-      100%{opacity: 1;}
+
+    @keyframes main-banner__poster {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
     }
-    @keyframes main-banner__drink01{
-      0%{opacity: 0}
-      20%{opacity: 0;}
-      40%{opacity: 1;}
-      60%{opacity: 1;}
-      80%{opacity: 1;}
-      100%{opacity: 1;}
+    @keyframes main-banner__drink01 {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
     }
-    @keyframes main-banner__drink02{
-      0%{opacity: 0}
-      20%{opacity: 0;}
-      40%{opacity: 0;}
-      60%{opacity: 1;}
-      80%{opacity: 1;}
-      100%{opacity: 1;}
+    @keyframes main-banner__drink02 {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 1;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
     }
-    @keyframes main-banner__drink03{
-      0%{opacity: 0}
-      20%{opacity: 0;}
-      40%{opacity: 0;}
-      60%{opacity: 0;}
-      80%{opacity: 1;}
-      100%{opacity: 1;}
-    }   
-    @keyframes main-banner__txt-box{
-      0%{opacity: 0}
-      20%{opacity: 0;}
-      40%{opacity: 0;}
-      60%{opacity: 0;}
-      80%{opacity: 0;}
-      100%{opacity: 1;}
+    @keyframes main-banner__drink03 {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
     }
- }
+    @keyframes main-banner__txt-box {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 0;
+      }
+      60% {
+        opacity: 0;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 //공지사항 시작 //
@@ -128,7 +184,6 @@ a {
       margin: 0 10px;
       color: #fff;
       font-size: 14px;
-      
 
       a {
         color: #fff;
@@ -158,7 +213,7 @@ a {
     }
   }
   .notice-right {
-    background-color: #f6f5ef;;
+    background-color: #f6f5ef;
     width: 50%;
     height: 60px;
     display: flex;
@@ -172,7 +227,7 @@ a {
         font-size: 18px;
         font-weight: bold;
         margin-left: 180px;
-       }
+      }
     }
   }
 }
@@ -182,21 +237,23 @@ a {
   width: 820px;
   margin: 0 auto;
   position: relative;
-  .slide__item {border: 1px solid green;
+  .slide__item {
+    border: 1px solid green;
     display: flex;
     width: 2490px;
     margin-left: -100%;
-    .slide__banner {border: 1px solid red;
+    .slide__banner {
+      border: 1px solid red;
       margin: 0 5px;
       position: relative;
     }
 
-    .more__btn{
+    .more__btn {
       border: 2px solid #000;
       border-radius: 5px;
       padding: 10px 23px;
       position: absolute;
-      bottom: 1%; 
+      bottom: 1%;
       left: 41%;
       transition: background-color 0.5s;
 
@@ -205,19 +262,19 @@ a {
         font-size: 13px;
         transition: color 0.5s;
       }
- 
     }
-    :hover{ 
+    :hover {
       background-color: #000;
-    :hover a{
-      color: #fff;
-      font-weight: bold;
-      text-decoration: underline;
+      :hover a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
   }
-  }
-  
-  .slide__btn {border: 1px solid green;
+
+  .slide__btn {
+    border: 1px solid green;
     width: 1000px;
     display: flex;
     flex-direction: row-reverse;
@@ -226,8 +283,8 @@ a {
     top: 50%;
     left: -9%;
 
-
-    #next, #prev{
+    #next,
+    #prev {
       line-height: 40px;
       text-align: center;
       font-size: 45px;
@@ -236,17 +293,15 @@ a {
       border: 2px solid #000;
       border-radius: 50px;
       cursor: pointer;
-      }
-    #next:hover{
+    }
+    #next:hover {
       background-color: #fff;
     }
-    #prev:hover{
+    #prev:hover {
       background-color: #fff;
     }
-   
   }
 }
-
 
 .slide__play {
   margin-top: 20px;
@@ -256,12 +311,19 @@ a {
   .slide__play__btn {
     display: flex;
     justify-content: center;
-      
-    &>li {
+
+    & > li {
       margin: 0 3px;
       margin-bottom: 20px;
     }
-  
+  }
+}
 
+.autoplay {
+  overflow: hidden;
+  div {
+    img {
+      width: 850px;
+    }
   }
 }

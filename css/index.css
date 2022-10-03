@@ -375,7 +375,8 @@ a {
   top: 50%;
   left: -9%;
 }
-.slide .slide__btn #next, .slide .slide__btn #prev {
+.slide .slide__btn #next,
+.slide .slide__btn #prev {
   line-height: 40px;
   text-align: center;
   font-size: 45px;
@@ -404,6 +405,13 @@ a {
 .slide__play .slide__play__btn > li {
   margin: 0 3px;
   margin-bottom: 20px;
+}
+
+.autoplay {
+  overflow: hidden;
+}
+.autoplay div img {
+  width: 850px;
 }
 
 #header-mob {
@@ -497,11 +505,17 @@ a {
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__txt {
   line-height: 3.5rem;
 }
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__txt a.on {
+  text-decoration: underline;
+}
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down {
   background-color: #222222;
   display: none;
   margin-left: -40px;
   padding-left: 60px;
+}
+#mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down a.on {
+  text-decoration: underline;
 }
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down a {
   color: #666;
@@ -509,7 +523,7 @@ a {
 #mob-menu .mob-menu-slide .drop-menu > .drop-menu__title > .drop-menu__down .drop-menu__down__down li {
   height: 60px;
 }
-#mob-menu .mob-menu-slide .drop-menu .drop-menu__title.on {
+#mob-menu .mob-menu-slide .drop-menu .drop-menu__title > a.on {
   text-decoration: underline;
 }
 
