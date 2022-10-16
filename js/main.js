@@ -39,11 +39,12 @@ $("#prev").on("click", function () {
  */
 
 $(".autoplay").slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
+  Infinite: true,
   autoplay: true,
   autoplaySpeed: 2000,
   dots: true,
   speed: 1000,
   arrows: true,
+  centerMode: true,
+  centerPadding: "500px",
 });
